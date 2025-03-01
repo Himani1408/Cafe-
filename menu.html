@@ -1,0 +1,114 @@
+<!-- Updated menu.html with Scroll Bar, Equal Image Sizes, and More Items -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Café Delight</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .menu-container {
+      max-height: 500px;
+      overflow-y: auto;
+      border: 2px solid #ccc;
+      padding: 10px;
+      scrollbar-width: thin;
+      scrollbar-color: #ff6347 #f1f1f1;
+    }
+
+    .menu-container::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    .menu-container::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    .menu-container::-webkit-scrollbar-thumb {
+      background: #ff6347;
+      border-radius: 5px;
+    }
+
+    .menu-item img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="https://png.pngtree.com/png-clipart/20221006/original/pngtree-coffee-blue-icon-logo-circle-png-image_8660830.png" alt="Café Delight">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Menu Section with Scroll Bar -->
+  <section class="menu">
+    <h2>Our Delicious Menu</h2>
+    <div class="menu-container">
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="https://th.bing.com/th?id=OIP.eFdrwmzBRktpWO-WvwzrGgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Coffee">
+          <h3>Coffee</h3>
+          <p>Rich and aromatic coffee to start your day.</p>
+          <p class="price">$3.50</p>
+          <button class="order-button">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <img src="https://th.bing.com/th/id/OIP.1cOCEUVVTQYPNNrn2SXIdgHaE7?rs=1&pid=ImgDetMain" alt="Pastry">
+          <h3>Pastry</h3>
+          <p>Freshly baked pastries with a variety of fillings.</p>
+          <p class="price">$2.50</p>
+          <button class="order-button">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <img src="https://blog.swiggy.com/wp-content/uploads/2024/06/Image-1_Veg-Cheese-Grilled-Sandwich-1024x538.png" alt="Sandwich">
+          <h3>Sandwich</h3>
+          <p>Delicious sandwiches made with fresh ingredients.</p>
+          <p class="price">$4.50</p>
+          <button class="order-button">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <img src="https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2019/03/Blueberry-Smoothie-main.jpg" alt="Smoothie">
+          <h3>Smoothie</h3>
+          <p>Refreshing fruit smoothies with natural flavors.</p>
+          <p class="price">$5.00</p>
+          <button class="order-button">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <img src="https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/master/pass/Smashburger-recipe-120219.jpg" alt="Burger">
+          <h3>Burger</h3>
+          <p>Juicy beef burger with fresh toppings.</p>
+          <p class="price">$6.00</p>
+          <button class="order-button">Order Now</button>
+        </div>
+        <div class="menu-item">
+          <img src="https://www.myareacoupons.co/storage/business-image/November2022/vgo0exeSp0Xwyh8EuYPX.jpg" alt="Pizza">
+          <h3>Pizza</h3>
+          <p>Hot and cheesy pizza with a variety of toppings.</p>
+          <p class="price">$8.00</p>
+          <button class="order-button">Order Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Café Delight. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
